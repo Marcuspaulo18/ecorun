@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urbanismo Sustentavel - Salvador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">  
+</head>
+<body>
+
+<nav class="navegacao">
+  <div class="navegacaoLogo">Eco <span>Run</span></div>
+  <ul class="navegacaoLinks">
+    <li><a href="#cidadao">Cidadão</a></li>
+    <li><a href="#estado">Estado</a></li>
+    <li><a href="#plataforma">Plataforma</a></li>
+  </ul>
+</nav>
+
+<header class="cabecalho">
+  <div class="cabecalhoTopo">
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A9B7F" stroke-width="1.5"/><path d="M6 3v3l2 1" stroke="#4A9B7F" stroke-width="1.5" stroke-linecap="round"/></svg>
+    Salvador, Bahia
+  </div>
+  <h1>Cidade mais limpa começa<br>com <em>cidadão informado</em></h1>
+  <p class="cabecalhoSubtitulo">
+    Um espaço dedicado a traduzir o Principio da Participação em ações concretas, conectando quem corre na Orla, quem cuida da praça e quem cobra do poder publico.
+  </p>
+  <div class="cabecalhoAcoes">
+    <a href="#cidadao" class="botao botaoPrincipal">Ver praticas do cidadão</a>
+    <a href="#estado" class="botao botaoContorno">O que cobrar do Estado</a>
+  </div>
+</header>
+
+<!-- <div class="pilares">
+  <div class="pilar">
+    <div class="pilarIcone pilarIconeVerde">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6 2 3 5 3 9c0 5 7 9 7 9s7-4 7-9c0-4-3-7-7-7z" stroke="#1C3A2B" stroke-width="1.6"/></svg>
+    </div>
+    <div>
+      <div class="pilarRotulo">Secao 1</div>
+      <div class="pilarTitulo">Papel da Populacao</div>
+    </div>
+  </div>
+  <div class="pilar">
+    <div class="pilarIcone pilarIconeCobre">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="10" rx="2" stroke="#C8763A" stroke-width="1.6"/><path d="M7 5V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" stroke="#C8763A" stroke-width="1.6"/></svg>
+    </div>
+    <div>
+      <div class="pilarRotulo">Secao 2</div>
+      <div class="pilarTitulo">Papel do Estado</div>
+    </div>
+  </div>
+  <div class="pilar">
+    <div class="pilarIcone pilarIconeAzul">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="3" stroke="#2A5080" stroke-width="1.6"/><path d="M7 10h6M7 13h4M7 7h2" stroke="#2A5080" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </div>
+    <div>
+      <div class="pilarRotulo">Secao 3</div>
+      <div class="pilarTitulo">Experiencia e Funcionalidades</div>
+    </div>
+  </div>
+</div> -->
+
+<section class="secao" id="cidadao">
+  <div class="secaoCabecalho">
+    <div class="secaoNumero secaoNumeroVerde">01</div>
+    <div>
+      <span class="secaoEtiqueta secaoEtiquetaVerde">Praticas do Cidadão</span>
+      <h2>O Papel da População</h2>
+      <p class="secaoDescricao">Iniciativas individuais e coletivas que colocam o Principio da Participação Ambiental em pratica nas ruas, praças e circuitos de corrida de Salvador.</p>
+    </div>
+  </div>
+
+  <div class="gradeCartoes">
+
+    <div class="cartao cartaoVerde">
+      <div class="cartaoIcone cartaoIconeVerde">
+        <button class="btn border-0 bg-transparent p-0 shadow-none"  data-bs-toggle="modal" data-bs-target="#modal01">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2a5 5 0 1 1 0 10A5 5 0 0 1 9 2z" stroke="#1C3A2B" stroke-width="1.5"/><path d="M9 12v4M6 14h6" stroke="#1C3A2B" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <h3>Corrida Lixo Zero</h3>
+      <div class="cartaoObjetivoLabel">Objetivo</div>
+      <p class="cartaoObjetivoTexto">Estimular nova mentalidade em atletas para redução voluntaria de residuos plasticos de uso unico nos treinos da Orla ou em parques.</p>
+      <div class="cartaoAcaoLabel cartaoAcaoLabelVerde">Ação Pratica</div>
+      <p class="cartaoAcaoTexto">Promover copos retratis de silicone ou garrafas termicas nos pontos de hidratacao. Incentivar guardar saches de gel de carboidrato ate a proxima lixeira.</p>
+    </div>
+
+    <div class="modal fade" id="modal01" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Corrida Lixo zero</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>A Pegada de Carbono e de Plástico nos Treinos</h5>
+            <p>Salvador tem uma das orlas mais bonitas do país, muito utilizada por assessorias de corrida e atletas individuais da Barra até a de Patamares/Piatã. No entanto, o volume de copos plásticos de água descartados inadequadamente após os treinos matinais de sábado e domingo é alarmante.</p>
+            
+            <p>Muitas vezes, as lixeiras da praia não dão conta e o vento arrasta esses plásticos leves direto para a areia e o mar, afetando a fauna marinha local. Além disso, em dias de chuva forte, esse lixo obstrui as bocas de lobo das avenidas Octávio Mangabeira e Centenário, agravando os pontos de alagamento na cidade.</p>
+
+            <h5 class="mt-4">Como expandir essa ideia na prática:</h5>
+            <ul>
+              <li><strong>Sachets de Gel conscientes:</strong> O gel de carboidrato é muito usado por corredores. A dica de ouro é nunca destacar a "tampa" do sachet completamente (para não gerar dois micro-lixos) e guardá-lo de volta no bolso do short ou cinto de hidratação até encontrar uma lixeira adequada.</li>
+              <li><strong>Desafio "Zero Descarte":</strong> Incentivar as assessorias de corrida locais a adotarem galões de água comunitários nos pontos de apoio, onde cada atleta abastece seu próprio copo retrátil de silicone ou garrafa térmica (caramanhola).</li>
+              <li><strong>Preservação dos Espaços Verdes:</strong> Parques como o Parque da Cidade (Itaigara) possuem fauna e flora ricas que sofrem diretamente com resíduos deixados na terra ou nas raízes das árvores, o que pode atrair pragas urbanas e inviabilizar o gramado para piqueniques e descanso.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cartao cartaoVerde">
+      <div class="cartaoIcone cartaoIconeVerde">
+        <button class="btn border-0 bg-transparent p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#modal02">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2a5 5 0 1 1 0 10A5 5 0 0 1 9 2z" stroke="#1C3A2B" stroke-width="1.5"/><path d="M9 12v4M6 14h6" stroke="#1C3A2B" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <h3>Seu Pet, Sua Responsabilidade</h3>
+      <div class="cartaoObjetivoLabel">Objetivo</div>
+      <p class="cartaoObjetivoTexto">Abordar o impacto sanitario e ambiental do descarte incorreto de dejetos animais em áreas de lazer publico em Salvador.</p>
+      <div class="cartaoAcaoLabel cartaoAcaoLabelVerde">Ação Pratica</div>
+      <p class="cartaoAcaoTexto">Informar sobre riscos de zoonoses e contaminacao do solo. Incentivar o uso constante de sacos biodegradaveis para recolhimento nas praças.</p>
+    </div>
+
+    <div class="modal fade" id="modal02" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Seu Pet, Sua Responsabilidade</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>O Impacto Invisível nas Nossas Praças</h5>
+            <p>Deixar os dejetos dos pets nas praças e calçadões vai muito além do desconforto visual ou do risco de alguém pisar. Em locais com grande circulação, como a Praça Nossa Senhora da Luz ou o Rio Vermelho, as fezes acumuladas na terra ou na grama são carregadas pelas chuvas diretamente para o sistema de drenagem e, eventualmente, para as praias.</p>
+            
+            <p>Isso propaga zoonoses perigosas (como o bicho-geográfico e verminoses) que afetam tanto outros animais quanto crianças que brincam nesses espaços públicos.</p>
+
+            <h5 class="mt-4">Como expandir essa ideia no bairro:</h5>
+            <ul>
+              <li><strong>Amigos do Parque:</strong> Criar um movimento (ou plaquinhas artesanais) sinalizando onde ficam os sacos biodegradáveis na praça.</li>
+              <li><strong>Garrafa d'água na caminhada:</strong> Além de recolher as fezes, carregar uma garrafinha com água e um pouco de desinfetante ecológico para diluir a urina do pet nos postes e canteiros, reduzindo o mau cheiro coletivo.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cartao cartaoVerde">
+      <div class="cartaoIcone cartaoIconeVerde">
+        <button class="btn border-0 bg-transparent p-0 shadow-none"  data-bs-toggle="modal" data-bs-target="#modal03">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2a5 5 0 1 1 0 10A5 5 0 0 1 9 2z" stroke="#1C3A2B" stroke-width="1.5"/><path d="M9 12v4M6 14h6" stroke="#1C3A2B" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <h3><span>Plogging</span> nas Ruas de Salvador</h3>
+      <div class="cartaoObjetivoLabel">Objetivo</div>
+      <p class="cartaoObjetivoTexto">Promover a uniao entre atividade fisica e preservacao ambiental atraves de iniciativas comunitarias na cidade.</p>
+      <div class="cartaoAcaoLabel cartaoAcaoLabelVerde">Ação Pratica</div>
+      <p class="cartaoAcaoTexto">Divulgar grupos locais para caminhar ou correr coletando microlixo na Praca Ana Lucia Magalhaes, Parque da Cidade e calcadao da Barra.</p>
+    </div>
+
+    <div class="modal fade" id="modal03" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel"><span>Plogging</span> nas Ruas de Salvador</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <h5>Unindo Saúde com a Saúde da Cidade</h5>
+          <p>O <em>Plogging</em> (tendência que nasceu na Suécia combinando o ato de correr com a coleta de lixo) faz total sentido na topografia e no clima de Salvador. Enquanto você faz agachamentos (squats) para pegar um microlixo, você potencializa o gasto calórico do seu treino aeróbico habitual.</p>
+          
+          <p>Focar na Ana Lúcia Magalhães ou na Barra é estratégico: são áreas com altíssimo fluxo de atletas que servem de vitrine, inspirando quem está apenas passando a repensar o próprio descarte.</p>
+
+          <h5 class="mt-4">Plano de Ação para o Plogger Soteropolitano:</h5>
+          <ul>
+            <li><strong>Kit Básico:</strong> Uma luva de jardinagem reutilizável (para proteger as mãos) e uma sacola de pano ou de plástico resistente.</li>
+            <li><strong>Foco no Microlixo:</strong> O objetivo não é recolher sacolas pesadas, mas sim focar naquilo que passa batido pela varrição pública rápida: bitucas de cigarro, tampinhas de garrafa pet, lacres de alumínio e canudos.</li>
+            <li><strong>Conexão Local:</strong> Agendar "corridas verdes" aos sábados pela manhã, terminando o treino com uma foto do "botim do dia" nas redes sociais para gerar conscientização.</li>
+          </ul>
+         </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cartao cartaoVerde">
+      <div class="cartaoIcone cartaoIconeVerde">
+        <button class="btn border-0 bg-transparent p-0 shadow-none"  data-bs-toggle="modal" data-bs-target="#modal04">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2a5 5 0 1 1 0 10A5 5 0 0 1 9 2z" stroke="#1C3A2B" stroke-width="1.5"/><path d="M9 12v4M6 14h6" stroke="#1C3A2B" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <h3>Guia dos EcoPontos Municipais</h3>
+      <div class="cartaoObjetivoLabel">Objetivo</div>
+      <p class="cartaoObjetivoTexto">Desafogar as lixeiras comuns das pracas, direcionando residuos especificos para os locais corretos de descarte.</p>
+      <div class="cartaoAcaoLabel cartaoAcaoLabelVerde">Ação Pratica</div>
+      <p class="cartaoAcaoTexto">Mapear e explicar os EcoPontos geridos pela Limpurb, mostrando como os moradores do entorno podem descartar reciclaveis de forma voluntaria.</p>
+    </div>
+
+    <div class="modal fade" id="modal04" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Guia dos EcoPontos Municipais</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Por que o EcoPonto é a Solução Definitiva?</h5>
+            <p>As lixeiras verdes e laranjas espalhadas pelas praças de Salvador costumam ficar saturadas nos finais de semana por conta de cocos, garrafas e embalagens de lanches. Quando o lixo transborda, o vento e os animais acabam espalhando os resíduos pela vegetação.</p>
+            
+            <p>O papel da Limpurb com os EcoPontos e PEVs (Pontos de Entrega Voluntária) é receber materiais triados que entram direto na cadeia de reciclagem, gerando renda para cooperativas de catadores locais e evitando que o plástico pare nos oceanos.</p>
+
+            <h5 class="mt-4">Dicas Práticas de Engajamento:</h5>
+            <ul>
+              <li><strong>Logística Reversa Doméstica:</strong> Criar o hábito de acumular os recicláveis secos da semana em casa e fazer uma caminhada ou pedalada até o EcoPonto mais próximo como parte da sua rotina de exercícios.</li>
+              <li><strong>Mapeamento Comunitário:</strong> Divulgar no grupo do condomínio ou do bairro a localização exata do EcoPonto mais perto (Salvador conta com pontos fixos em diversos bairros como Stella Maris, Itapuã, e centrais de recebimento itinerantes).</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="secao" id="estado" style="background: #FBF7F0;">
+  <div class="secaoCabecalho">
+    <div class="secaoNumero secaoNumeroCobre">02</div>
+    <div>
+      <span class="secaoEtiqueta secaoEtiquetaCobre">Fiscalização Cidadã</span>
+      <h2>O Papel do Estado</h2>
+      <p class="secaoDescricao">As obrigacoes legais e administrativas do municipio de Salvador em relacao a manutencao sanitaria e a gestao ambiental dos espacos publicos.</p>
+    </div>
+  </div>
+
+  <div class="gradeCartoes">
+
+    <div class="cartao cartaoCobre">
+      <div class="cartaoIcone cartaoIconeCobre">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2l1.9 4 4.1.6-3 2.9.7 4.1L9 11.5l-3.7 1.9.7-4.1-3-2.9 4.1-.6z" stroke="#C8763A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>Lei do Lixo - Lei No 8.512/13</h3>
+      <div class="cartaoObjetivoLabel">Objetivo</div>
+      <p class="cartaoObjetivoTexto">Debater a eficacia e as penalidades previstas para o descarte irregular de residuos nas vias publicas de Salvador.</p>
+      <div class="cartaoAcaoLabel cartaoAcaoLabelCobre">Acao Exigida ao Governo</div>
+      <p class="cartaoAcaoTexto">Intensificacao da fiscalizacao ativa pela Limpurb e Guarda Municipal em pracas publicas de grande movimento nos finais de semana.</p>
+    </div>
+
+    <div class="cartao cartaoCobre">
+      <div class="cartaoIcone cartaoIconeCobre">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="6" stroke="#C8763A" stroke-width="1.5"/><path d="M9 6v3l2 2" stroke="#C8763A" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Residuos em Eventos Esportivos</h3>
+      <div class="cartaoObjetivoLabel">Objetivo</div>
+      <p class="cartaoObjetivoTexto">Garantir a aplicacao do Principio do Poluidor-Pagador na organizacao de circuitos de corrida de rua na capital baiana.</p>
+      <div class="cartaoAcaoLabel cartaoAcaoLabelCobre">Acao Exigida ao Governo</div>
+      <p class="cartaoAcaoTexto">Exigencia rigida no licenciamento de eventos de plano de contingencia ambiental com varricao pos-prova e destinacao do plastico a cooperativas de reciclagem.</p>
+    </div>
+
+    <div class="cartao cartaoCobre">
+      <div class="cartaoIcone cartaoIconeCobre">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 13h12M5 13V8l4-4 4 4v5" stroke="#C8763A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>Infraestrutura Urbana Resiliente</h3>
+      <div class="cartaoObjetivoLabel">Objetivo</div>
+      <p class="cartaoObjetivoTexto">Adequar o mobiliario urbano a realidade geografica e climatica da cidade, especialmente nas regioes de orla.</p>
+      <div class="cartaoAcaoLabel cartaoAcaoLabelCobre">Acao Exigida ao Governo</div>
+      <p class="cartaoAcaoTexto">Instalacao de lixeiras resistentes a maresia na Orla e regioes perifericas, com caixas coletoras fechadas que impecam dispersao pelo vento ou animais.</p>
+    </div>
+
+    <div class="cartao cartaoCobre">
+      <div class="cartaoIcone cartaoIconeCobre">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14c0-4 2-7 5-7s5 3 5 7" stroke="#C8763A" stroke-width="1.5" stroke-linecap="round"/><path d="M9 7V3M7 5l2-2 2 2" stroke="#C8763A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>Sanitarismo Ambiental e Drenagem</h3>
+      <div class="cartaoObjetivoLabel">Objetivo</div>
+      <p class="cartaoObjetivoTexto">Evitar o surgimento de vetores de doencas e alagamentos decorrentes do acumulo de residuos em areas de lazer.</p>
+      <div class="cartaoAcaoLabel cartaoAcaoLabelCobre">Acao Exigida ao Governo</div>
+      <p class="cartaoAcaoTexto">Cumprimento do PMSB com lavagem programada de pracas de alta circulacao e desobstrucao continua de bueiros e canais proximos a locais de treino.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECAO 3 PLATAFORMA -->
+<section class="secao" id="plataforma">
+  <div class="secaoCabecalho">
+    <div class="secaoNumero secaoNumeroAzul">03</div>
+    <div>
+      <span class="secaoEtiqueta secaoEtiquetaAzul">Ferramentas do Blog</span>
+      <h2>Experiencia do Usuario e Funcionalidades</h2>
+      <p class="secaoDescricao">A plataforma atua como elo de conscientizacao e intermediacao, sem assumir responsabilidades executivas, apenas conectando o cidadao ao poder publico.</p>
+    </div>
+  </div>
+
+  <div class="gradeUX">
+
+    <div class="cartaoUX">
+      <h3>Mapa Interativo de Coleta Sustentavel</h3>
+      <p>Integracao de mapa digital sinalizando os EcoPontos ativos da Limpurb em Salvador e os principais circuitos de corrida e parques da cidade.</p>
+      <div class="cartaoUXFuncao">
+        <div class="cartaoUXFuncaoLabel">Funcao</div>
+        <p class="cartaoUXFuncaoTexto">Facilitar o acesso visual do cidadao aos locais adequados de descarte, centralizando informacoes publicas em uma interface amigavel e de facil navegacao.</p>
+      </div>
+    </div>
+
+    <div class="cartaoUX">
+      <h3>Canal de Redirecionamento - Fala Salvador</h3>
+      <p>Espaco informativo que orienta o usuario sobre como formalizar reclamacoes sanitarias, falta de varricao ou problemas estruturais em pracas diretamente a prefeitura.</p>
+      <div class="cartaoUXFuncao">
+        <div class="cartaoUXFuncaoLabel">Funcao</div>
+        <p class="cartaoUXFuncaoTexto">Atuar exclusivamente como intermediador: links diretos, telefone 156 e tutoriais de acesso ao portal Fala Salvador, sem processar denuncias internamente.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RODAPE -->
+<footer class="rodape">
+  <div class="rodapeInterno">
+    <div>
+      <div class="rodapeMarca">Urbanismo <span>Sustentavel</span></div>
+      <p>Blog de conscientizacao ambiental para a cidade de Salvador, Bahia.</p>
+    </div>
+    <div>
+      <div class="rodapeRotuloColuna">Secoes</div>
+      <div class="rodapeLinks">
+        <a href="#cidadao">Praticas do Cidadao</a>
+        <a href="#estado">O Papel do Estado</a>
+        <a href="#plataforma">Plataforma e UX</a>
+      </div>
+    </div>
+    <div>
+      <div class="rodapeRotuloColuna">Contato Publico</div>
+      <div class="rodapeLinks">
+        <a href="#">Fala Salvador</a>
+        <a href="#">Limpurb</a>
+        <a href="#">156 - Prefeitura de Salvador</a>
+      </div>
+    </div>
+  </div>
+  <div class="rodapeFundo">2025 Urbanismo Sustentavel - Direito Ambiental Aplicado</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+
+</script>
+</body>
+</html>
